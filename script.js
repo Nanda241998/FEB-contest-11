@@ -3,7 +3,14 @@ const studentArray = [
     { id: 2, name: "jack", age: "20", marks: 85 },
     { id: 3, name: "karen", age: "19", marks: 35 },
   ];
-  
+  const removeFailedStudent = document.getElementById("removeFailedStudent");
+  const concatenateArray = document.getElementById("concatenateArray");
+ 
+ const addData = document.getElementById("addData");
+  const nameInput = document.getElementById("nameInput");
+  const marksInput = document.getElementById("marksInput");
+  const ageInput = document.getElementById("ageInput");
+ 
   function PrintStudentswithMap() {
     //Write your code here , just console.log
     const filteredStudents = studentArray.filter(student => student.marks >= 50);
